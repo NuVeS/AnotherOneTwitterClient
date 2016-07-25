@@ -25,9 +25,7 @@
 - Domain Model layer
 - Presentation
   - Components
-  - Storyboards (without segues)
   - SideMenu
 - Application
 
-next updtate: 25/08/2016
-  
+
