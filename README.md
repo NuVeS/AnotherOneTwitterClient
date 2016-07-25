@@ -1,5 +1,13 @@
 # VIPER Example of whole application
 
+## Now
+- Main - Auth Router (Router)
+- Auth emulation
+- Main module - TabBar
+  - Profile
+  - Feed
+
+
 ## How to build
 
 1) Update frameworks using *carthage* `carthage update --platform iOS --no-use-binaries`
@@ -13,8 +21,6 @@
 **PR welcome**
 
 ## Plans
-
-Now in progress and with old style code, in plans:
 - Service layer (API, DataSources)
 - Domain Model layer
 - Presentation
