@@ -24,8 +24,7 @@ final class ProfileViewController: BaseViewController
     , ProfileViewInput
 {
     var output: ProfileViewOutput!
-    typealias RouterType = ProfileRouter
-    var router: RouterType!
+    var router: ProfileRouter!
 
     // MARK: - Life cycle
     override func viewDidLoad()

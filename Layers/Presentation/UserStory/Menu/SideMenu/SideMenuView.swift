@@ -24,11 +24,7 @@ final class SideMenuViewController: BaseViewController
     , SideMenuViewInput
 {
     var output: SideMenuViewOutput!
-    typealias RouterType = SideMenuRouter
-    var router: RouterType!
-
-    // MARK: Presenting
-    
+    var router: SideMenuRouter!
     
     // MARK: - Life cycle
     override func viewDidLoad()
