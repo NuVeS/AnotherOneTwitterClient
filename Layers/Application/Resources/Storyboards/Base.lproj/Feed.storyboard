@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Feed-->
+        <scene sceneID="auN-q7-vQe">
+            <objects>
+                <viewController storyboardIdentifier="FeedViewController" title="Feed" id="3y9-M6-e9m" customClass="FeedViewController" customModule="AnotherOneTwitterClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FTL-MK-ZgO"/>
+                        <viewControllerLayoutGuide type="bottom" id="zUO-oe-iNH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BsA-FV-JD5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed comming soon ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kd-RZ-kXn">
+                                <rect key="frame" x="73" y="230" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Kd-RZ-kXn" firstAttribute="centerX" secondItem="BsA-FV-JD5" secondAttribute="centerX" id="cZQ-7j-WYA"/>
+                            <constraint firstItem="4Kd-RZ-kXn" firstAttribute="centerY" secondItem="BsA-FV-JD5" secondAttribute="centerY" id="eex-KX-vI7"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0l-od-kWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="323"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="AaM-8t-Ojz">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" title="Profile" id="8fW-kI-8aa" customClass="ProfileViewController" customModule="AnotherOneTwitterClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GmZ-gx-SRl"/>
+                        <viewControllerLayoutGuide type="bottom" id="8jF-qz-RhH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CtR-5o-FAe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile comming soon ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZP-3E-Fmj">
+                                <rect key="frame" x="68" y="229" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9ZP-3E-Fmj" firstAttribute="centerX" secondItem="CtR-5o-FAe" secondAttribute="centerX" id="B6b-eL-wKZ"/>
+                            <constraint firstItem="9ZP-3E-Fmj" firstAttribute="centerY" secondItem="CtR-5o-FAe" secondAttribute="centerY" id="zxS-2M-K5G"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AC3-kT-2yO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="323"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="o1A-u1-0L9">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuViewController" id="fgy-Sq-a3K" customClass="SideMenuViewController" customModule="AnotherOneTwitterClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rhq-uB-vAh"/>
+                        <viewControllerLayoutGuide type="bottom" id="wPs-BT-JOa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sUw-bD-aUb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcb-8R-Hgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="323"/>
+        </scene>
+    </scenes>
+</document>

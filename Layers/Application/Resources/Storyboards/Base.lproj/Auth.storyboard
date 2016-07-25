@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="WLQ-kb-aEX">
+            <objects>
+                <viewController storyboardIdentifier="AuthViewController" id="HiR-Zj-ojo" customClass="AuthViewController" customModule="AnotherOneTwitterClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yJG-au-GWd"/>
+                        <viewControllerLayoutGuide type="bottom" id="GTA-Ab-Kck"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xlj-dW-R4K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter authorisation is going to be here" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKG-C3-FYM">
+                                <rect key="frame" x="8" y="182" width="304" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewH-G6-DLQ">
+                                <rect key="frame" x="144" y="227" width="32" height="30"/>
+                                <state key="normal" title="Auth"/>
+                                <connections>
+                                    <action selector="signInAction:" destination="HiR-Zj-ojo" eventType="touchUpInside" id="Ai8-T3-bVD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FKG-C3-FYM" firstAttribute="centerY" secondItem="Xlj-dW-R4K" secondAttribute="centerY" constant="-48" id="7Bj-ux-GMH"/>
+                            <constraint firstItem="ewH-G6-DLQ" firstAttribute="top" secondItem="FKG-C3-FYM" secondAttribute="bottom" constant="24" id="Jmh-TU-5Lz"/>
+                            <constraint firstItem="ewH-G6-DLQ" firstAttribute="centerX" secondItem="Xlj-dW-R4K" secondAttribute="centerX" id="u1z-Ci-vE8"/>
+                            <constraint firstItem="FKG-C3-FYM" firstAttribute="centerX" secondItem="Xlj-dW-R4K" secondAttribute="centerX" id="vqP-Q9-wCo"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWD-zc-EcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="319"/>
+        </scene>
+    </scenes>
+</document>
