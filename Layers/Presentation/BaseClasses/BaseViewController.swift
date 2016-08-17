@@ -63,7 +63,6 @@ class BaseViewController: UIViewController
     
     func waitMode(on: Bool)
     {
-        
         DispatchToMainQueue {
             if on {
                 self.setupControllerToWaitMode()

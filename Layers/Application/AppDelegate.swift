@@ -8,6 +8,8 @@
 
 import UIKit
 import ThreadsKit
+import Fabric
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var router: Router!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
+        Fabric.with([Twitter.self])
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         resources = Dependencies(window: window!)
         router = Router(dependencies: resources)
@@ -25,7 +27,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
-
 }
 

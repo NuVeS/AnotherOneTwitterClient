@@ -16,8 +16,17 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 0 files.
+  /// This `R.file` struct is generated, and contains static references to 1 files.
   struct file {
+    /// Resource file `TwitterKitResources.bundle`.
+    static let twitterKitResourcesBundle = FileResource(bundle: _R.hostingBundle, name: "TwitterKitResources", pathExtension: "bundle")
+    
+    /// `bundle.URLForResource("TwitterKitResources", withExtension: "bundle")`
+    static func twitterKitResourcesBundle(_: Void) -> NSURL? {
+      let fileResource = R.file.twitterKitResourcesBundle
+      return fileResource.bundle.URLForResource(fileResource)
+    }
+    
     private init() {}
   }
   

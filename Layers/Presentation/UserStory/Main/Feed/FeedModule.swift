@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TwitterKit
 
 // MARK: - Module interface
 protocol FeedModuleInput
@@ -17,7 +18,7 @@ protocol FeedModuleInput
 //MARK: Output
 protocol FeedModuleOutput: class
 {
-
+    func loadTweets()
 }
 
 
@@ -34,10 +35,19 @@ final class FeedPresenter: FeedModuleInput
     func setupDelegate(output: FeedModuleOutput)
     {
         self.output = output
+        interactor.loadTweets()
     }
 
 
     // MARK: - Interactor Output
+    
+    func loadedTweets(tweet: TWTRTweet) {
+        view.showTweet(tweet)
+    }
 
     // MARK: - View Output
+    func didLoad() {
+        interactor.loadTweets()
+    }
+    
 }

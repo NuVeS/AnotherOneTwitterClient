@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F844340C1D64713F003BFED9 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84434081D64713F003BFED9 /* Fabric.framework */; };
+		F844340D1D64713F003BFED9 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84434091D64713F003BFED9 /* TwitterKit.framework */; };
+		F844340E1D64713F003BFED9 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F844340A1D64713F003BFED9 /* TwitterKitResources.bundle */; };
+		F844340F1D64713F003BFED9 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F844340B1D64713F003BFED9 /* TwitterCore.framework */; };
 		FE6145681D4225B000501FA2 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6145661D4225B000501FA2 /* Rswift.framework */; };
 		FE6145691D4225B000501FA2 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE6145661D4225B000501FA2 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE61456A1D4225B000501FA2 /* ThreadsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6145671D4225B000501FA2 /* ThreadsKit.framework */; };
@@ -67,6 +71,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F84434081D64713F003BFED9 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		F84434091D64713F003BFED9 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		F844340A1D64713F003BFED9 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		F844340B1D64713F003BFED9 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		FE6145051D4214BD00501FA2 /* AnotherOneTwitterClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotherOneTwitterClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE61451A1D4215FE00501FA2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6145661D4225B000501FA2 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
@@ -116,8 +124,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F844340F1D64713F003BFED9 /* TwitterCore.framework in Frameworks */,
 				FE6145681D4225B000501FA2 /* Rswift.framework in Frameworks */,
 				FE61456A1D4225B000501FA2 /* ThreadsKit.framework in Frameworks */,
+				F844340C1D64713F003BFED9 /* Fabric.framework in Frameworks */,
+				F844340D1D64713F003BFED9 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +138,10 @@
 		FE6144FC1D4214BD00501FA2 = {
 			isa = PBXGroup;
 			children = (
+				F84434081D64713F003BFED9 /* Fabric.framework */,
+				F84434091D64713F003BFED9 /* TwitterKit.framework */,
+				F844340A1D64713F003BFED9 /* TwitterKitResources.bundle */,
+				F844340B1D64713F003BFED9 /* TwitterCore.framework */,
 				FE69B1B01D45DF370028B45F /* Layers */,
 				FE61456D1D4225BA00501FA2 /* Frameworks */,
 				FE6145061D4214BD00501FA2 /* Products */,
@@ -352,6 +367,7 @@
 				FE6145021D4214BD00501FA2 /* Frameworks */,
 				FE6145031D4214BD00501FA2 /* Resources */,
 				FE61456C1D4225B000501FA2 /* Embed Frameworks */,
+				F84434071D64706D003BFED9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -404,6 +420,7 @@
 				FE69B1F41D45DF370028B45F /* Main.storyboard in Resources */,
 				FE69B1F31D45DF370028B45F /* LaunchScreen.storyboard in Resources */,
 				FE69B1EF1D45DF370028B45F /* Assets.xcassets in Resources */,
+				F844340E1D64713F003BFED9 /* TwitterKitResources.bundle in Resources */,
 				FE69B1F21D45DF370028B45F /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +428,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		F84434071D64706D003BFED9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 437e340ca39a653ca3af3cf43408212a6903c96c 858e93c8b5fb8a15e80570630c08ed50faf18fbc192a01b4f05ceacf002a5dfd";
+		};
 		FE6145701D42264400501FA2 /* R.swift generate */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -598,6 +628,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -614,6 +645,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

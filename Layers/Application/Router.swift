@@ -27,7 +27,7 @@ class Router: AuthModuleOutput
     }
     
     // MARK: Auth module output
-    func userDidSignIn(user: UserModel)
+    func userDidSignIn(user: UserModel?)
     {
         let mainScreen = MainAssembly.createModule(resources: resources) { module in}
         mainScreen.present(fromWindow: resources.window)

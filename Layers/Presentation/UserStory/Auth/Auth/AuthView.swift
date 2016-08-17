@@ -7,16 +7,17 @@
 //
 
 import UIKit
+import TwitterKit
 
 // MARK: - Interface
 protocol AuthViewInput: class
 {
-
+    
 }
 
 protocol AuthViewOutput: class
 {
-    func signInDidSelect()
+    func signedInWithToken(token: String)
 }
 
 // MARK: - View Controller
@@ -36,8 +37,14 @@ final class AuthViewController: BaseViewController
     // MARK: Interface builder
     
     @IBAction func signInAction(sender: AnyObject)
-    {
-        output.signInDidSelect()
+    {        
+        let method =  TWTRLoginMethod.WebBasedForceLogin
+        
+        Twitter.sharedInstance().logInWithMethods(method) {  (session, error) in
+            self.output?.signedInWithToken((session?.authTokenSecret)!)
+            
+        }
+
     }
     
     // MARK: - Life cycle
@@ -46,6 +53,10 @@ final class AuthViewController: BaseViewController
         super.viewDidLoad()
         /* Initialization here */
     }
+    
+    
 
     // MARK: View Input
+    
+    
 }

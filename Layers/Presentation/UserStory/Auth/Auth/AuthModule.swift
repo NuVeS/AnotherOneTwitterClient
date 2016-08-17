@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//import TwitterKit
+
 
 // MARK: - Module interface
 protocol AuthModuleInput
@@ -17,7 +19,7 @@ protocol AuthModuleInput
 //MARK: Output
 protocol AuthModuleOutput: class
 {
-    func userDidSignIn(user: UserModel)
+    func userDidSignIn(user: UserModel?)
 }
 
 
@@ -36,14 +38,13 @@ final class AuthPresenter: AuthModuleInput
         self.output = output
     }
 
-
     // MARK: - Interactor Output
 
     // MARK: - View Output
-    
-    func signInDidSelect()
-    {
-       output?.userDidSignIn(UserModel()) // Sign in emulation
+    func signedInWithToken(token: String) {
+        //TODO: DO something here
+        output?.userDidSignIn(nil)
     }
+    
     
 }

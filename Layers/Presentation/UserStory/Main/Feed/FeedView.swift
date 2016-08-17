@@ -7,16 +7,17 @@
 //
 
 import UIKit
+import TwitterKit
 
 // MARK: - Interface
 protocol FeedViewInput: class
 {
-
+    func showTweet(tweet: TWTRTweet)
 }
 
 protocol FeedViewOutput: class
 {
-
+    func didLoad()
 }
 
 // MARK: - View Controller
@@ -27,11 +28,16 @@ final class FeedViewController: BaseViewController
     typealias RouterType = FeedRouter
     var router: RouterType!
 
+    @IBOutlet var tweetView: TWTRTweetView!
     // MARK: - Life cycle
     override func viewDidLoad()
     {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        output.didLoad()
     }
 
     // MARK: View Input
+    func showTweet(tweet: TWTRTweet) {
+        tweetView.configureWithTweet(tweet)
+    }
 }

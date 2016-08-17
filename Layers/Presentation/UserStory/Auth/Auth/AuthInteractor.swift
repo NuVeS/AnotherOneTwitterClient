@@ -7,19 +7,23 @@
 //
 
 // MARK: - Interface
+
+//import TwitterKit
+
 protocol AuthInteractorInput: class
 {
-
+    
 }
 
 //MARK: Output
 protocol AuthInteractorOutput: class
 {
-
+    
 }
 
 // MARK: - Interactor
 final class AuthInteractor: AuthInteractorInput
 {
     weak var output: AuthInteractorOutput!
+    
 }
