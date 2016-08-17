@@ -1,0 +1,26 @@
+### Headers settings
+company: VIPER
+
+### Xcode project settings
+project_name: AnotherOneTwitterClient
+xcodeproj_path: AnotherOneTwitterClient.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: AnotherOneTwitterClient
+
+# The file path for new modules
+project_file_path: Layers/Presentation/UserStory
+
+# The Xcode group path to new modules
+project_group_path: Layers/Presentation/UserStory
+
+### Dependencies settings section
+
+cartfile_path: Cartfile
+
+### Templates
+catalogs:
+- 'https://github.com/VIPER/swift-templates'
+templates:
+- {name: module-vc}
